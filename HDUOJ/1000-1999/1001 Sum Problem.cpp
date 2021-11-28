@@ -5,11 +5,17 @@
  * @LastEditors: oneboyi
  */
 #include<iostream>
-using namespace std;
-int main(void)
-{
-	int n;
-	while(cin>>n)
-		cout << n * (n + 1) / 2<<endl<<endl;
-	return 0;
+ using namespace std;
+ int main()
+ {
+     int num;
+     int sum=0;
+     while(cin>>num)
+     {
+         for(int i=1;i<=num;i++)
+         sum+=i;
+         cout<<sum<<"\n"<<"\n";
+         sum=0;
+     }
+     return 0;
 }
