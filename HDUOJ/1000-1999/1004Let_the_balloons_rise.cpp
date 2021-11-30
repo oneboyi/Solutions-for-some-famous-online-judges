@@ -16,11 +16,15 @@ int num[1005];
 int main(void)
 {
     int n,i,j;
-    int max=-0x3f3f3f3f;
-    int maxi = 0;
-    while(scanf("%d",&n)!=EOF)
+    int max;
+    int maxi;
+    cin>>n;
+    while(n!=0)
     {
         memset(num, 0, sizeof(num));
+        memset(flag,0,sizeof(flag));
+        max=-0x3f3f3f3f;
+        maxi=0;
         for (i = 1; i <= n;i++)
             cin >> a[i];
         for (i = 1; i <= n; i++)
@@ -46,6 +50,7 @@ int main(void)
             }
         }
         cout << a[maxi] << endl;
+        cin>>n;
     }
     return 0;
 }
